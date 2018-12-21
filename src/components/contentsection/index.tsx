@@ -6,8 +6,8 @@
  * NPM Dependencies
  */
 import React, { ReactNode } from 'react';
+import Img from 'gatsby-image';
 import './content-section.css';
-import { POINT_CONVERSION_UNCOMPRESSED } from 'constants';
 
 /**
  * Local dependencies
@@ -23,12 +23,9 @@ interface Props {
   subtitle?: string;
   invert?: boolean;
   background?: string;
-  verticalPadding?: number;
-  marginTop?: number;
-  paddingTop?: number;
-  paddingBottom?: number;
+  className?: string;
   children: ReactNode;
-  cover?: string;
+  coverimage?: any;
 }
 
 /**
@@ -37,35 +34,32 @@ interface Props {
  * 
  * @param data
  */
-const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle= null, invert, background='none', verticalPadding=0, marginTop=0, paddingTop=180, paddingBottom=80, children, cover=null }) => {
+const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle= null, invert, background='none', className='', children, coverimage=null }) => {
 
   const subtitleEl = subtitle ? (<span>{subtitle}</span>) : null;
   const titleEl = title ? (<h2>{title}</h2>) : null;
   const invertedClassname = invert ? "invert" : "";
 
   const style = {
-    background: background,
-    marginTop: marginTop ? marginTop+'px' : 'inherit',
-    paddingTop: verticalPadding ? verticalPadding+'px' : paddingTop+'px',
-    paddingBottom: verticalPadding ? verticalPadding+'px' : paddingBottom+'px',
+    background: background
   }
 
   let coverImage;
-  if (cover!==null) {
-    coverImage = <img src={cover} />;
-    style.paddingBottom = "0";
+  if (coverimage!==null) {
+    coverImage = <Img fluid={coverimage.childImageSharp.fluid} />;
+    // style.paddingBottom = "0";
   } else {
     coverImage = null;
   }
 
   return (
-    <div className={`komodoGridWrapper cs-wrapper ${invertedClassname}`} style={style}>
+    <div className={`komodoGridWrapper cs-wrapper ${invertedClassname} ${className}`} style={style}>
       <div className={`Content-Section`}>
-          {subtitleEl}
-          {titleEl}
-          <div>{children}</div>
-          {coverImage}
+        {subtitleEl}
+        {titleEl}
+        <div>{children}</div>
       </div>
+      {coverImage}
     </div>
 
   );

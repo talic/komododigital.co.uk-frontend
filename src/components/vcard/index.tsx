@@ -6,6 +6,7 @@
  * NPM Dependencies
  */
 import React, { ReactNode } from 'react';
+import Img from 'gatsby-image';
 
 /**
  * Local dependencies
@@ -18,10 +19,21 @@ import './vcard.css'
  * data
  */
 interface Props {
-  avatar: string;
-  name: string;
-  jobtitle: string;
-  email: string;
+  person: string;
+  avatar?: any;
+}
+
+const people = {
+  "Armin": {
+    jobtitle: "Commercial Director",
+    name:"Armin Talic",
+    email:"armin@komododigital.co.uk"
+  },
+  "Phoebe": {
+    jobtitle: "Client Partner",
+    name:"Phoebe Dowley",
+    email:"phoebe@komododigital.co.uk"
+  }
 }
 
 /**
@@ -30,14 +42,14 @@ interface Props {
  * 
  * @param data
  */
-const VCard: React.SFC<Props> = ({ avatar, name, jobtitle, email }) => {
+const VCard: React.SFC<Props> = ({ person, avatar }) => {
+  const { jobtitle, name, email } = people[person];
   return (
     <div className="vcard">
-      <img src={avatar} width="70" height="70" />
+      <Img fixed={avatar.childImageSharp.fixed} />
       <div>
         <h1>{name}</h1>
         <h2>{jobtitle}</h2>
-        <a href="mailto: {email}">{email}</a>
       </div>
     </div>
   );

@@ -40,7 +40,7 @@ interface CaseStudy {
   subtitle: string;
   link: string;
   htmlAst: any;
-  image: string;
+  csimage: any;
 }
 
 interface IndexPageProps {
@@ -62,16 +62,16 @@ interface IndexPageProps {
 export default (props: IndexPageProps) => {
   return (
     <Layout data={props.data} >
-      <ContentSection title={props.title} subtitle={props.subtitle} invert background="#000000" paddingTop={200} paddingBottom={200}>
+      <ContentSection title={props.title} subtitle={props.subtitle} invert background="#000000" className="topPaddingLarge bottomPaddingLarge">
         {renderAst(props.intro)}
       </ContentSection>
-      <ContentSection title="About Us" paddingTop={200} paddingBottom={30}>
+      <ContentSection title="About Us" className="topPaddingLarge bottomPaddingsmall">
         {renderAst(props.aboutUsIntro)}
       </ContentSection>
       <ContentImage>
-        <img src={require("../images/illustration@1.5x.svg")} alt={"Komodo at work"} />
+        <object type="image/svg+xml" data={require("../content/images/illustration@1.5x.svg")} />
       </ContentImage>
-      <ContentSection title="Approach" paddingTop={200} paddingBottom={0}>
+      <ContentSection title="Approach" className="topPaddingLarge bottomPaddingSmall">
         {renderAst(props.approachIntro)}
       </ContentSection>
       <QuadGrid>
@@ -83,7 +83,7 @@ export default (props: IndexPageProps) => {
           );
         })}
       </QuadGrid>
-      <ContentSection title="Case Studies" paddingTop={200} paddingBottom={0}>
+      <ContentSection title="Case Studies" className="topPaddingLarge bottomPaddingSmall">
         {renderAst(props.caseStudiesIntro)}
       </ContentSection>
       {props.caseStudies.map((study) => {
@@ -93,35 +93,37 @@ export default (props: IndexPageProps) => {
             subtitle={study.subtitle}
             title={study.title}
             link={study.link}
-            image={images[study.image]}
+            image={study.csimage}
           >
             {renderAst(study.htmlAst)}
           </CaseStudy>
         );
       })}
       <SeeMoreButton title="See More Work" />
-      <ContentSection title="Client Portfolio" paddingTop={0} paddingBottom={0}>
+      <ContentSection title="Client Portfolio" className="topPaddingMedium">
         {renderAst(props.clientPortfoliosIntro)}
       </ContentSection>
       <PortfolioGrid>
-        <StandardItem imgsrc={require("../images/portfolio/CoP.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/DB.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/elanders@2x.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/gichd.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/HTL.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/ISG.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/ITV.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/Legrand.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/logo-space-group.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/Newcastle Uni.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/Northumbria uni.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/Northumbria-police logo@2x.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/onward-logo.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/Orchard.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/streetstream.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/ThingCo.png")} link="/About" />
+
+        <StandardItem imgsrc={props.data.client_cop} title="College of Policing" link="/About" />
+        <StandardItem imgsrc={props.data.client_digitalbarriers} title="Digital Barriers" link="/About" />
+        <StandardItem imgsrc={props.data.client_elanders} title="eLanders" link="/About" />
+        <StandardItem imgsrc={props.data.client_gichd} title="GICHD" link="/About" />
+        <StandardItem imgsrc={props.data.client_htl} title="HTL" link="/About" />
+        <StandardItem imgsrc={props.data.client_isg} title="ISG" link="/About" />
+        <StandardItem imgsrc={props.data.client_itv} title="ITV" link="/About" />
+        <StandardItem imgsrc={props.data.client_legrand} title="LeGrand" link="/About" />
+        <StandardItem imgsrc={props.data.client_spacegroup} title="Space Group" link="/About" />
+        <StandardItem imgsrc={props.data.client_newcastleuni} title="Newcastle University" link="/About" />
+        <StandardItem imgsrc={props.data.client_northumbriapolice} title="Northumbria Police" link="/About" />
+        <StandardItem imgsrc={props.data.client_northumbriauni} title="Northumbria University" link="/About" />
+        <StandardItem imgsrc={props.data.client_onward} title="Onward" link="/About" />
+        <StandardItem imgsrc={props.data.client_orchard} title="Orchard" link="/About" />
+        <StandardItem imgsrc={props.data.client_streetstream} title="Streetstream" link="/About" />
+        <StandardItem imgsrc={props.data.client_thingco} title="ThingCo" link="/About" />
+
       </PortfolioGrid>
-      <ContentSection title="Insights">
+      <ContentSection title="Insights" className="topPaddingMedium">
         {renderAst(props.insightsIntro)}
       </ContentSection>
       <BlogGrid>
@@ -130,12 +132,12 @@ export default (props: IndexPageProps) => {
       })}
       </BlogGrid>
       <SeeMoreButton title="See More Insights" link={"/blog-list"} />
-      <ContentSection title="Contact Us" background="#FFFFFF">
+      <ContentSection title="Contact Us" background="#FFFFFF" className="topPaddingMedium">
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>
-        <VCard avatar={require("../images/avatar.png")} jobtitle="Commercial Director" name="Armin Talic" email="story@vcard.com" />
-        <VCard avatar={require("../images/avatar.png")} jobtitle="Director" name="Matt Moran" email="story@vcard.com" />
+        <VCard person="Armin" avatar={props.data.avatar} />
+        <VCard person="Phoebe" avatar={props.data.avatar} />
         <ContactForm />
       </ContactSection>
     </Layout>

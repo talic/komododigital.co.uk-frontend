@@ -132,18 +132,20 @@ Array [
   </div>,
   <div
     className="main"
+    style={
+      Object {
+        "background": "linear-gradient(to bottom,  80px,#EAEAEA 80px)",
+      }
+    }
   >
     <img
       width="100%"
     />
     <div
-      className="komodoGridWrapper cs-wrapper "
+      className="komodoGridWrapper cs-wrapper  "
       style={
         Object {
           "background": "none",
-          "marginTop": "inherit",
-          "paddingBottom": "80px",
-          "paddingTop": "180px",
         }
       }
     >

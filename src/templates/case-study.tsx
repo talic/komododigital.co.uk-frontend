@@ -49,7 +49,7 @@ const data = {
     background: "linear-gradient(0deg, #23375A 0%, #12203A 100%)",
     invert: true,
     content: {
-      cover: require("../images/casestudy/StreetStreamCover.png"),
+      cover: require("../content/images/casestudy/StreetStreamCover.png"),
       testimonial: {
         testimonial: "Komodo are very refreshing, a talented, engaging and flexible team completely focused on delivering the customer's objectives.",
         name: "Paul Crennell",
@@ -61,32 +61,40 @@ const data = {
 }
 
 export default (props) => {
-
+  
   let page;
+
+  let slug = "case-studies/start-up";
 
   if (props.pageContext && props.pageContext.hasOwnProperty("slug")) { // TODO: Work out why tests don't have the pageContext property
     page = data[props.pageContext.slug];
+    slug = props.pageContext.slug;
   } else {
     page = data["case-studies/start-up"];
   }
 
+  const casestudy = props.caseStudies.filter((casestudy)=>{
+    return casestudy.link===slug;
+  });
+  
   return (
     <Layout data={props.data} background={page.navBackground}>
-      <ContentSection subtitle={props.subtitle} title={props.title} background={page.background} invert={page.invert} paddingTop={200} paddingBottom={200} cover={page.content.cover}>{renderAst(props.intro)}</ContentSection>
+      <ContentSection subtitle={props.subtitle} title={props.title} background={page.background} invert={page.invert} className="topPaddingLarge bottomPaddingLarge" coverimage={casestudy[0]?casestudy[0].coverimage:null}>{renderAst(props.intro)}</ContentSection>
       <ContentSection title="Solution/Project Outcome">
         {renderAst(props.metricsIntro)}
       </ContentSection>
       <Metrics>
-      {props.metrics.map((metric) => {
+      {props.metrics.map((metric, i) => {
           return (
             <Metric
-              key={metric.metric}
+              key={`metric-${i}`}
               metric={metric.metric}
               value={metric.value}
               description={metric.description}
             />
           );
-        })}
+        })
+      }
       </Metrics>
       <ContentSection title={props.processTitle}>
         {renderAst(props.process)}
@@ -102,7 +110,7 @@ export default (props) => {
               subtitle={study.subtitle}
               title={study.title}
               link={study.link}
-              image={images[study.image]}
+              image={study.csimage}
             >
               {renderAst(study.htmlAst)}
             </CaseStudy>

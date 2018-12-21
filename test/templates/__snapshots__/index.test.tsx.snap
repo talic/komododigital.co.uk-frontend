@@ -132,15 +132,17 @@ Array [
   </div>,
   <div
     className="main"
+    style={
+      Object {
+        "background": "linear-gradient(to bottom,  80px,#EAEAEA 80px)",
+      }
+    }
   >
     <div
-      className="komodoGridWrapper cs-wrapper invert"
+      className="komodoGridWrapper cs-wrapper invert topPaddingLarge bottomPaddingLarge"
       style={
         Object {
           "background": "#000000",
-          "marginTop": "inherit",
-          "paddingBottom": "200px",
-          "paddingTop": "200px",
         }
       }
     >
@@ -161,13 +163,10 @@ Array [
       </div>
     </div>
     <div
-      className="komodoGridWrapper cs-wrapper "
+      className="komodoGridWrapper cs-wrapper  topPaddingLarge bottomPaddingsmall"
       style={
         Object {
           "background": "none",
-          "marginTop": "inherit",
-          "paddingBottom": "30px",
-          "paddingTop": "200px",
         }
       }
     >
@@ -187,19 +186,16 @@ Array [
     <div
       className="csi-wrapper"
     >
-      <img
-        alt="Komodo at work"
-        src={Object {}}
+      <object
+        data={Object {}}
+        type="image/svg+xml"
       />
     </div>
     <div
-      className="komodoGridWrapper cs-wrapper "
+      className="komodoGridWrapper cs-wrapper  topPaddingLarge bottomPaddingSmall"
       style={
         Object {
           "background": "none",
-          "marginTop": "inherit",
-          "paddingBottom": "0px",
-          "paddingTop": "200px",
         }
       }
     >
@@ -220,13 +216,10 @@ Array [
       className="komodoGridWrapper QuadGrid"
     />
     <div
-      className="komodoGridWrapper cs-wrapper "
+      className="komodoGridWrapper cs-wrapper  topPaddingLarge bottomPaddingSmall"
       style={
         Object {
           "background": "none",
-          "marginTop": "inherit",
-          "paddingBottom": "0px",
-          "paddingTop": "200px",
         }
       }
     >
@@ -256,13 +249,10 @@ Array [
       </a>
     </div>
     <div
-      className="komodoGridWrapper cs-wrapper "
+      className="komodoGridWrapper cs-wrapper  topPaddingMedium"
       style={
         Object {
           "background": "none",
-          "marginTop": "inherit",
-          "paddingBottom": "0px",
-          "paddingTop": "0px",
         }
       }
     >
@@ -289,9 +279,52 @@ Array [
         <a
           href="/About"
         >
-          <img
-            src={Object {}}
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 1,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 1,
+              }
+            }
+          >
+            <picture>
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={1}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                title="College of Policing"
+                width={1}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"College of Policing\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
         </a>
       </div>
       <div
@@ -300,9 +333,52 @@ Array [
         <a
           href="/About"
         >
-          <img
-            src={Object {}}
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 1,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 1,
+              }
+            }
+          >
+            <picture>
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={1}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                title="Digital Barriers"
+                width={1}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"Digital Barriers\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
         </a>
       </div>
       <div
@@ -311,9 +387,52 @@ Array [
         <a
           href="/About"
         >
-          <img
-            src={Object {}}
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 1,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 1,
+              }
+            }
+          >
+            <picture>
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={1}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                title="eLanders"
+                width={1}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"eLanders\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
         </a>
       </div>
       <div
@@ -322,9 +441,52 @@ Array [
         <a
           href="/About"
         >
-          <img
-            src={Object {}}
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 1,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 1,
+              }
+            }
+          >
+            <picture>
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={1}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                title="GICHD"
+                width={1}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"GICHD\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
         </a>
       </div>
       <div
@@ -333,9 +495,52 @@ Array [
         <a
           href="/About"
         >
-          <img
-            src={Object {}}
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 1,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 1,
+              }
+            }
+          >
+            <picture>
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={1}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                title="HTL"
+                width={1}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"HTL\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
         </a>
       </div>
       <div
@@ -344,9 +549,52 @@ Array [
         <a
           href="/About"
         >
-          <img
-            src={Object {}}
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 1,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 1,
+              }
+            }
+          >
+            <picture>
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={1}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                title="ISG"
+                width={1}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"ISG\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
         </a>
       </div>
       <div
@@ -355,9 +603,52 @@ Array [
         <a
           href="/About"
         >
-          <img
-            src={Object {}}
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 1,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 1,
+              }
+            }
+          >
+            <picture>
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={1}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                title="ITV"
+                width={1}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"ITV\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
         </a>
       </div>
       <div
@@ -366,9 +657,52 @@ Array [
         <a
           href="/About"
         >
-          <img
-            src={Object {}}
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 1,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 1,
+              }
+            }
+          >
+            <picture>
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={1}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                title="LeGrand"
+                width={1}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"LeGrand\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
         </a>
       </div>
       <div
@@ -377,9 +711,52 @@ Array [
         <a
           href="/About"
         >
-          <img
-            src={Object {}}
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 1,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 1,
+              }
+            }
+          >
+            <picture>
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={1}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                title="Space Group"
+                width={1}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"Space Group\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
         </a>
       </div>
       <div
@@ -388,9 +765,52 @@ Array [
         <a
           href="/About"
         >
-          <img
-            src={Object {}}
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 1,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 1,
+              }
+            }
+          >
+            <picture>
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={1}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                title="Newcastle University"
+                width={1}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"Newcastle University\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
         </a>
       </div>
       <div
@@ -399,9 +819,52 @@ Array [
         <a
           href="/About"
         >
-          <img
-            src={Object {}}
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 1,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 1,
+              }
+            }
+          >
+            <picture>
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={1}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                title="Northumbria Police"
+                width={1}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"Northumbria Police\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
         </a>
       </div>
       <div
@@ -410,9 +873,52 @@ Array [
         <a
           href="/About"
         >
-          <img
-            src={Object {}}
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 1,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 1,
+              }
+            }
+          >
+            <picture>
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={1}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                title="Northumbria University"
+                width={1}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"Northumbria University\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
         </a>
       </div>
       <div
@@ -421,9 +927,52 @@ Array [
         <a
           href="/About"
         >
-          <img
-            src={Object {}}
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 1,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 1,
+              }
+            }
+          >
+            <picture>
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={1}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                title="Onward"
+                width={1}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"Onward\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
         </a>
       </div>
       <div
@@ -432,9 +981,52 @@ Array [
         <a
           href="/About"
         >
-          <img
-            src={Object {}}
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 1,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 1,
+              }
+            }
+          >
+            <picture>
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={1}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                title="Orchard"
+                width={1}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"Orchard\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
         </a>
       </div>
       <div
@@ -443,9 +1035,52 @@ Array [
         <a
           href="/About"
         >
-          <img
-            src={Object {}}
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 1,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 1,
+              }
+            }
+          >
+            <picture>
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={1}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                title="Streetstream"
+                width={1}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"Streetstream\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
         </a>
       </div>
       <div
@@ -454,20 +1089,60 @@ Array [
         <a
           href="/About"
         >
-          <img
-            src={Object {}}
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 1,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 1,
+              }
+            }
+          >
+            <picture>
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={1}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                title="ThingCo"
+                width={1}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"ThingCo\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
         </a>
       </div>
     </div>
     <div
-      className="komodoGridWrapper cs-wrapper "
+      className="komodoGridWrapper cs-wrapper  topPaddingMedium"
       style={
         Object {
           "background": "none",
-          "marginTop": "inherit",
-          "paddingBottom": "80px",
-          "paddingTop": "180px",
         }
       }
     >
@@ -500,13 +1175,10 @@ Array [
       </a>
     </div>
     <div
-      className="komodoGridWrapper cs-wrapper "
+      className="komodoGridWrapper cs-wrapper  topPaddingMedium"
       style={
         Object {
           "background": "#FFFFFF",
-          "marginTop": "inherit",
-          "paddingBottom": "80px",
-          "paddingTop": "180px",
         }
       }
     >
@@ -532,11 +1204,53 @@ Array [
         <div
           className="vcard"
         >
-          <img
-            height="70"
-            src={Object {}}
-            width="70"
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 29,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 170,
+              }
+            }
+          >
+            
+            <picture>
+              
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={29}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                width={170}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"170\\" height=\\"29\\" src=\\"\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
           <div>
             <h1>
               Armin Talic
@@ -544,33 +1258,65 @@ Array [
             <h2>
               Commercial Director
             </h2>
-            <a
-              href="mailto: {email}"
-            >
-              story@vcard.com
-            </a>
           </div>
         </div>
         <div
           className="vcard"
         >
-          <img
-            height="70"
-            src={Object {}}
-            width="70"
-          />
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": 29,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": 170,
+              }
+            }
+          >
+            
+            <picture>
+              
+              <source
+                srcSet=""
+              />
+              <img
+                alt=""
+                height={29}
+                onLoad={[Function]}
+                src=""
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 0.5s",
+                    "width": "100%",
+                  }
+                }
+                width={170}
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><img width=\\"170\\" height=\\"29\\" src=\\"\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
           <div>
             <h1>
-              Matt Moran
+              Phoebe Dowley
             </h1>
             <h2>
-              Director
+              Client Partner
             </h2>
-            <a
-              href="mailto: {email}"
-            >
-              story@vcard.com
-            </a>
           </div>
         </div>
         <div

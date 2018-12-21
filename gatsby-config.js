@@ -16,6 +16,13 @@ module.exports = {
         }, 
       } 
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content`,
+        name: `content`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
     `gatsby-transformer-sharp`,
@@ -25,27 +32,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'KomodoDigital-Template',
-        short_name: 'KomodoDigital-Template',
+        name: 'Komodo Digital',
+        short_name: 'Komodo',
         start_url: '/',
         background_color: '#FFFFFF',
         theme_color: '#FFFFFF',
         display: 'minimal-ui',
-        icon: 'src/images/monogram.svg',
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/images`,
-        name: 'images',
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/content`,
-        name: `content`,
+        icon: 'src/content/images/monogram.svg',
       },
     },
     {

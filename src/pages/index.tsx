@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Index from '../templates/index';
-import { komodoLogo } from '../utils/site-queries';
+import { siteMeta, komodoLogo, clientLogos } from '../utils/site-queries';
 import { findNodes, findNode } from '../utils/nodes';
 import CleanSourceURL from '../utils/clean-source-url';
 
@@ -15,8 +15,6 @@ export default (props) => {
   const clientPortfoliosIntro = findNode('index/client_portfolio', props);
   const insightsIntro = findNode('index/insights', props);
   const contactsIntro = findNode('contacts/index', props);
-
-  console.log(props.data)
 
   const insights = props.data.allWordpressPost.edges.map((edge) => {
     const data = {
@@ -49,13 +47,7 @@ export default (props) => {
 
 export const pageQuery = graphql`
   query pageQuery {
-    site {
-      siteMetadata {
-        name
-        title
-        description
-      }
-    }
+    ...siteMeta
     allWordpressPost(limit: 3) {
       edges {
         node {
@@ -75,14 +67,21 @@ export const pageQuery = graphql`
           htmlAst
           frontmatter {
             title
-            image
             subtitle
+            csimage {
+              childImageSharp {
+                fluid(maxWidth: 450) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
             group
           }
           fileAbsolutePath
         }
       }
     }
+    ...clientLogos
     ...komodoLogo
   }
 `;
